@@ -1,0 +1,145 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+.container {
+    width: 100%;
+}
+
+.header {
+    width: 1900px;
+    padding: 33px;
+    background-color: #0a0a74;
+}
+
+.header img {
+     width: 140px;
+     margin-left: 69px;
+
+}
+
+.footer img {
+  width: 140px;
+  margin-left: -4px;
+
+}
+
+
+.carousel {
+  width: 1106px;
+  margin: 0px auto;
+}
+
+.container-fluid {
+    margin-top: 37px;
+}
+
+.g-4 {
+    margin-top: 100px;
+}
+
+.d-flex {
+    width: 1000px;
+    margin-left: 120px;
+}
+
+.row {
+    margin-left: -200px;
+    margin-top: 100px;
+}
+
+.footer {
+  width: 1846px;
+  padding: 63px;
+  background-color: #0a0a74;
+  margin-left: 0px;
+  position: fixed;
+  bottom: 0;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 576px;
+}
+
+.dropdown {
+    margin-left: 284px;
+    margin-top: -24px;
+}
+
+#dropdownMenuButton1 {
+    margin-left: 60px;
+    background-color: #0a0a74;
+    text-decoration: none;
+    border: none;
+}
+
+.fa-search {
+    color: white;
+    margin-left: 51px;
+}
+
+.fa-bell-o {
+    color: white;
+    margin-left: 657px;
+}
+.fa-user-o {
+    color: white;
+    margin-left: 46px;
+}
+
+
+/* Custom CSS for the movie cards */
+.movie-card {
+    height: 500px; /* Set a fixed height for the cards */
+  }
+
+  .movie-card .card-img-top {
+    height: 70%; /* Adjust the height of the image inside the card */
+    object-fit: cover; /* Ensure the image covers the entire space */
+  }
+
+  .movie-card .card-body {
+    height: 120px;
+  }
+
+  #movieCardsContainer {
+    width: 1595px;
+    margin-left: -44px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); Set the column width as needed */
+    gap: 20px; /* Adjust the gap value as desired */
+   
+  }
+
+  #btn-search{
+    color: #01015c;
+    font-size: 22px;
+    border: #0a0a74;
+    border: 2px solid;
+  }
+
+  #btn-search:hover {
+    color: white;
+    background-color: #0a0a74;
+  }
+
+  #search-input {
+    color: #01015c;
+    border: 2px solid #01015c;
+    
+  }
+
+  .mb-2 {
+    margin-bottom: 0.5rem!important;
+    width: 298px;
+}
+
+#initialResults {
+  width: 143%;
+  margin-left: -275px;
+}

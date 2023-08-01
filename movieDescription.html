@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <!-- Include Bootstrap CSS here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="movieDescription.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="movie-details">
+            <!-- Movie details left column -->
+            <div class="movie-poster">
+                <img src="" alt="Movie Poster" class="img-fluid rounded">
+            </div>
+            <div class="movie-info">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="movieTitle"></h5>
+                        <p class="card-text" id="releaseDate"></p>
+                        <p class="card-text" id="genres"></p>
+                        <p class="card-text" id="runtime"></p>
+                        <p class="card-text" id="userScore"></p>
+                        <p class="card-text" id="director"></p>
+                        <p class="card-text" id="overview"></p>
+                        <button class="btn btn-primary" id="trailerButton">Watch Trailer</button>
+                    </div>
+                </div>
+                <!-- Movie Trailer Section -->
+                <div class="movie-trailer" style="display: none;">
+                    <div id="trailerPlayer"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie cast right column -->
+        <div class="movie-cast">
+            <div class="scrollable-cast" id="scroll-cast">
+                <div class="cast-list" id="castList"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Include Bootstrap and jQuery scripts here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include YouTube Player API script -->
+    <script src="https://www.youtube.com/player_api"></script>
+    <!-- Include our custom JavaScript file -->
+    <script src="movieDescription.js"></script>
+</body>
+
+</html>
