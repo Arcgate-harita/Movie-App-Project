@@ -113,12 +113,6 @@ function displayMovieTrailer(videos) {
         trailerPlayer.style.display = 'none';
 
        window.open(`https://www.youtube.com/watch?v=${trailer.key}`, '_blank');
-
-    //   const youtubePlayer = new YT.Player('trailerPlayer', {
-    //       width: '100%',
-    //       height: '400',
-    //       videoId: trailer.key,
-    //   });
       });
   } else {
       trailerPlayer.textContent = 'Trailer not available.';

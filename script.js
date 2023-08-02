@@ -152,6 +152,10 @@ fetchMoviesCard();
 
 
 
+
+// JavaScript
+
+
 function searchSimilarMovies(query) {
 
   // Clear the current movie cards in both sections
@@ -267,13 +271,12 @@ function searchSimilarMovies(query) {
         })
         .catch(err => {
           console.error(err);
-          isLoading = false;
         });
     })
-    .catch(err => {
-      console.error(err);
-    });
-}
+//     .catch(err => {
+//       console.error(err);
+//     });
+   }
 
 // Event listener for the search form submission
 const searchForm = document.querySelector('form');

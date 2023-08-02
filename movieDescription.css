@@ -1,4 +1,4 @@
-/* Custom CSS for movie details page */
+
 .movie-details {
     display: flex;
     margin-top: 20px;
@@ -23,10 +23,9 @@
   }
   
   .cast-list {
-    display: inline-flex; /* Use inline-flex to make cast cards appear in a row */
+    display: inline-flex;
     margin-right: 10px;
-    flex-shrink: 0; /* Prevent flex items from shrinking */
-    /* height: 81px; */
+    flex-shrink: 0; 
   }
   
   .cast-card {
@@ -48,7 +47,6 @@
     background-color: #f8f9fa;
   }
   
-  /* Bootstrap 4 styles */
   .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     border: none;
@@ -57,7 +55,6 @@
   
   .card-body {
     padding: 36px;
-    /* height: 447px; */
   }
   
   .card-title {
@@ -78,7 +75,6 @@
   }
   .castBody {
     padding: 36px;
-    /* height: 447px; */
   }
   
   .cast-title {
