@@ -4,8 +4,9 @@ body {
     padding: 0;
   }
 
-.container {
+.content {
     width: 100%;
+    display: block;
 }
 
 .header {
@@ -30,6 +31,7 @@ body {
 .carousel {
   width: 1106px;
   margin: 0px auto;
+  display: block;
 }
 
 .container-fluid {
@@ -42,7 +44,7 @@ body {
 
 .d-flex {
     width: 1000px;
-    margin-left: 120px;
+    margin-left: 401px;
 }
 
 .row {
@@ -95,12 +97,13 @@ body {
 
 /* Custom CSS for the movie cards */
 .movie-card {
-    height: 500px; /* Set a fixed height for the cards */
+    height: 500px; 
+    display: block;
   }
 
   .movie-card .card-img-top {
-    height: 70%; /* Adjust the height of the image inside the card */
-    object-fit: cover; /* Ensure the image covers the entire space */
+    height: 70%;
+    object-fit: cover;
   }
 
   .movie-card .card-body {
@@ -109,10 +112,8 @@ body {
 
   #movieCardsContainer {
     width: 1595px;
-    margin-left: -44px;
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); Set the column width as needed */
-    gap: 20px; /* Adjust the gap value as desired */
+    margin-left: 200px;
+    gap: 20px; 
    
   }
 
@@ -139,7 +140,7 @@ body {
     width: 298px;
 }
 
-#initialResults {
-  width: 143%;
-  margin-left: -275px;
+#searchResults {
+    width: 1694px;
+    margin-left: -195px;
 }
