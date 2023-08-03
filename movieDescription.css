@@ -1,108 +1,113 @@
 /* Custom CSS for movie details page */
 .movie-details {
-    display: flex;
-    margin-top: 20px;
-  }
-  
-  .movie-poster {
-    width: 300px;
-    margin-right: 20px;
-  }
-  
-  .movie-info {
-    flex: 1;
-  }
-  
-  .movie-cast {
-    margin-top: 110px;
-  }
-  
-  #scroll-cast {
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  
-  .cast-list {
-    display: inline-flex; /* Use inline-flex to make cast cards appear in a row */
-    margin-right: 10px;
-    flex-shrink: 0; /* Prevent flex items from shrinking */
-    /* height: 81px; */
-  }
-  
-  .cast-card {
-    max-width: 150px;
-    margin-right: 10px;
-  }
-  
-  .cast-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-  
-  body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #f8f9fa;
-  }
-  
-  /* Bootstrap 4 styles */
-  .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    border: none;
-    height: 448px;
-  }
-  
-  .card-body {
-    padding: 36px;
-    /* height: 447px; */
-  }
-  
-  .card-title {
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: -1px;
-  }
-  
-  .card-img-top {
-    border-radius: 4px 4px 0 0;
-    object-fit: cover;
-  }
-  .castCard {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    border: none;
-    height: 284px;
-  }
-  .castBody {
-    padding: 36px;
-    /* height: 447px; */
-  }
-  
-  .cast-title {
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: -25px;
-  }
+  display: flex;
+  margin-top: 20px;
+}
 
-  #releaseDate {
-    font-size: 13px;
-  }
+.movie-poster {
+  width: 300px;
+  margin-right: 20px;
+}
 
-  #genres {
-    font-style: oblique;
-    font-size: 15px;
-  }
-  #overview {
-    font-size: 15px;
-    font-style: oblique;
-    font-family: auto;
-  }
+.movie-info {
+  flex: 1;
+}
 
-  #director {
-    font-family: ui-monospace;
-    font-weight: 600;
-  }
+.movie-cast {
+  margin-top: 110px;
+}
+
+#scroll-cast {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.cast-list {
+  display: inline-flex;
+  /* Use inline-flex to make cast cards appear in a row */
+  margin-right: 10px;
+  flex-shrink: 0;
+  /* Prevent flex items from shrinking */
+  /* height: 81px; */
+}
+
+.cast-card {
+  max-width: 150px;
+  margin-right: 10px;
+}
+
+.cast-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #f8f9fa;
+}
+
+/* Bootstrap 4 styles */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: none;
+  height: 448px;
+}
+
+.card-body {
+  padding: 36px;
+  /* height: 447px; */
+}
+
+.card-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: -1px;
+}
+
+.card-img-top {
+  border-radius: 4px 4px 0 0;
+  object-fit: cover;
+}
+
+.castCard {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: none;
+  height: 284px;
+}
+
+.castBody {
+  padding: 36px;
+  /* height: 447px; */
+}
+
+.cast-title {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: -25px;
+}
+
+#releaseDate {
+  font-size: 13px;
+}
+
+#genres {
+  font-style: oblique;
+  font-size: 15px;
+}
+
+#overview {
+  font-size: 15px;
+  font-style: oblique;
+  font-family: auto;
+}
+
+#director {
+  font-family: ui-monospace;
+  font-weight: 600;
+}
