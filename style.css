@@ -7,18 +7,19 @@ body {
 .content {
     width: 100%;
     display: block;
+    cursor: pointer;
 }
 
 .header {
     width: 1900px;
     padding: 33px;
     background-color: #0a0a74;
+    cursor: pointer;
 }
 
 .header img {
      width: 140px;
      margin-left: 69px;
-
 }
 
 .footer img {
@@ -26,10 +27,8 @@ body {
   margin-left: -4px;
 
 }
-
-
 .carousel {
-  width: 1106px;
+  width: 400px;
   margin: 0px auto;
   display: block;
 }
@@ -54,7 +53,7 @@ body {
 
 .footer {
   width: 1846px;
-  padding: 63px;
+  padding: 32px;
   background-color: #0a0a74;
   margin-left: 0px;
   position: fixed;
@@ -143,4 +142,13 @@ body {
 #searchResults {
     width: 1694px;
     margin-left: -195px;
+}
+
+.lazy {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazy.loaded {
+  opacity: 1;
 }

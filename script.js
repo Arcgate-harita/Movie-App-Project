@@ -33,6 +33,12 @@ function fetchMovies() {
 
         slideItem.appendChild(img);
         carouselInner.appendChild(slideItem);
+
+        img.addEventListener('click', () => {
+          // Redirect to movie details page with the movie ID as a query parameter
+          navigateToMovieDetailsPage(movie.id);
+        });
+
       });
     })
     .catch(err => console.error(err));
@@ -43,14 +49,9 @@ fetchMovies();
 
 const moviesPerPage = 6; // Number of movies to fetch per page
 let currentPage = 1; // Current page of movie data
-// let isLoading = false; // Flag to prevent multiple fetch requests simultaneously
 
 
 function fetchMoviesCard() {
-  // if (isLoading) return;
-  // isLoading = true;
-
-
 
   const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&page=${currentPage}`;
 
@@ -107,6 +108,7 @@ function fetchMoviesCard() {
         colDiv.appendChild(cardDiv);
         movieCardsContainer.appendChild(colDiv);
 
+
       });
     })
     .catch(err => console.error(err));
@@ -145,7 +147,9 @@ window.addEventListener('scroll', () => {
 // Initial load of movie cards
 fetchMoviesCard();
 
+
 function searchSimilarMovies(query) {
+
   const searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(query)}`;
 
   fetch(searchUrl)
@@ -207,10 +211,25 @@ function displayMovieResults(movies) {
     cardDiv.appendChild(img);
     cardDiv.appendChild(cardBodyDiv);
 
+    img.addEventListener('click', () => {
+      // Redirect to movie details page with the movie ID as a query parameter
+      navigateToMovieDetailsPage(movie.id);
+    });
+
     colDiv.appendChild(cardDiv);
     searchResultsDiv.appendChild(colDiv);
+    movieCardsContainer.style.display = "none";
+
   });
 }
+
+
+// Trigger loading more movies when the user scrolls to the bottom of the page
+window.addEventListener('scroll', () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    loadMoreMovies();
+  }
+});
 
 // Event listener for the search form submission
 const searchForm = document.querySelector('form');
