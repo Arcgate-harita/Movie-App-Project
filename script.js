@@ -177,6 +177,7 @@ function searchSimilarMovies(query) {
 function displayNoResults() {
   const searchResultsDiv = document.getElementById('searchResults');
   searchResultsDiv.innerHTML = '<div>No movies found for the search query.</div>';
+  movieCardsContainer.style.display = "none";
 }
 
 function displayMovieResults(movies) {
