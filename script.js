@@ -178,6 +178,7 @@ function displayNoResults() {
   const searchResultsDiv = document.getElementById('searchResults');
   searchResultsDiv.innerHTML = '<div>No movies found for the search query.</div>';
   movieCardsContainer.style.display = "none";
+  movieCardsContainer.classList.add("movieCardsContainer");
 }
 
 function displayMovieResults(movies) {
